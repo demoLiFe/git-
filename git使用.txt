@@ -26,11 +26,11 @@
 
 丢弃撤销工作区修改内容 git checkout --file  版本库中恢复删除掉但没有被commit的文件
 
-创建并且换分支 git checkout -b master  git checkout 命令加上 –b参数表示创建并切换，相当于如下2条命令
+创建并且换分支 git checkout -b (分支名) git checkout 命令加上 –b参数表示创建并切换，相当于如下2条命令
 
-创建分支 git branch master  
+创建分支 git branch (分支名)
 
-切换分支 git checkout master  
+切换分支 git checkout (分支名)
 
 删除某个文件 rm file
 
