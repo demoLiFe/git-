@@ -1,0 +1,69 @@
+远端拉取代码 git clone http://username:password@gitlab.300.cn/package1/myProject.git @使用40%代替
+
+暂存区添加文件 git add file or . .是全部
+
+暂存区内容提交本地仓库 git commit -m "提交信息"
+
+新增本地仓库与远端仓库关联  git remote add origin URL
+
+提交本地仓库内容到远端仓库 git push -u origin master
+
+删除本地仓库与所有远端仓库关联 git remote rm origin  
+
+查看本地仓库与远端仓库关联列表 git remote -v
+
+切换本地仓库与远端仓库关联地址 git remote set-url origin URL
+
+查看是否有文件没有提交 git status
+
+查看文件修改的内容 git diff file
+
+查看提交日志 git log
+
+文件版本回退 git reset --hard HEAD^ ^表示回退几个版本
+
+查看提交历史版本 git reflog
+
+丢弃撤销工作区修改内容 git checkout --file  版本库中恢复删除掉但没有被commit的文件
+
+创建并且换分支 git checkout -b master  git checkout 命令加上 –b参数表示创建并切换，相当于如下2条命令
+
+创建分支 git branch master  
+
+切换分支 git checkout master  
+
+删除某个文件 rm file
+
+查看git全局配置列表 git config --list
+
+配置全局配置用户信息 git config --global user.email "123@qq.com"
+
+
+
+
+
+
+1 . 清除凭证助手
+git config --system --unset credential.helper
+# 除了system外，还有global、local等范围
+# 使用 git config --list 命令这是展示配置属性，只要不存在credential.helper表示清除成功
+2. 配置凭证助手
+git config --global credential.helper store
+# 清除成功后，每次远程操作pull/push/fetch时需要手动输入密码啊。
+# 执行这个命令，开启凭证助手，一次输入密码认证成功后会被存储下来。
+————————————————
+
+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
+
+
+
+
+
+
+
+
+
+
+
+
+
