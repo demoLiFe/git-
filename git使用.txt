@@ -54,7 +54,7 @@ git config --global credential.helper store
 # 执行这个命令，开启凭证助手，一次输入密码认证成功后会被存储下来。
 ————————————————
 
-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
+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
 
 
 
