@@ -32,7 +32,17 @@
 
 切换分支 git checkout (分支名)
 
-删除某个文件 rm file
+查看分支 git branch
+
+合并某分支到当前分支 git merge (分支名)
+
+删除分支 git branch -d (分支名)
+
+打开文件 dir
+
+删除某个文件git rm file
+
+删除文件夹 git rm -r 
 
 查看git全局配置列表 git config --list
 
