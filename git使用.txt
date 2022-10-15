@@ -40,9 +40,9 @@
 
 删除分支 git branch -d (分支名)
 
-指定本地dev分支与远程origin/dev分支的链接 git checkout --set-upstream (本地分支名) origin/(远端分支名)
-
 禁用合并分支git默认的fastforward模式 在这种模式下，删除分支后，会丢掉分支信息  git merge --no-ff -m "注释信息"
+
+指定本地dev分支与远程origin/dev分支的链接 git checkout --set-upstream (本地分支名) origin/(远端分支名)
 
 隐藏当前工作 git stash
 
