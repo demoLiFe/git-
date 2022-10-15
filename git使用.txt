@@ -6,7 +6,7 @@
 
 新增本地仓库与远端仓库关联  git remote add origin URL
 
-提交本地仓库内容到远端仓库 git push -u origin master
+提交本地仓库内容到远端仓库 git push -u origin (分支名默认master) 首次提交需要加-u
 
 删除本地仓库与所有远端仓库关联 git remote rm origin  
 
@@ -28,15 +28,28 @@
 
 创建并且换分支 git checkout -b (分支名) git checkout 命令加上 –b参数表示创建并切换，相当于如下2条命令
 
+把远程的origin的dev分支到本地来 git cheout -b （本地分支名） origin/（远端分支名）
+
 创建分支 git branch (分支名)
 
 切换分支 git checkout (分支名)
 
-查看分支 git branch
+查看当前分支 git branch
 
 合并某分支到当前分支 git merge (分支名)
 
 删除分支 git branch -d (分支名)
+
+指定本地dev分支与远程origin/dev分支的链接 git checkout --set-upstream (本地分支名) origin/(远端分支名)
+
+禁用合并分支git默认的fastforward模式 在这种模式下，删除分支后，会丢掉分支信息  git merge --no-ff -m "注释信息"
+
+隐藏当前工作 git stash
+
+查看隐藏的工作 git stash list
+
+回复工作状态 1.git stash apply恢复，恢复后，stash内容并不删除，你需要使用命令git stash drop来删除。
+             2.另一种方式是使用git stash pop,恢复的同时把stash内容也删除了。
 
 打开文件 dir
 
