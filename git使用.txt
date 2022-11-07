@@ -1,5 +1,7 @@
 远端拉取代码 git clone http://username:password@gitlab.300.cn/package1/myProject.git @使用40%代替
 
+初始化 git init 
+
 暂存区添加文件 git add file or . .是全部
 
 暂存区内容提交本地仓库 git commit -m "提交信息"
